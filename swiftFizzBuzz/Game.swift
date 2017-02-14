@@ -17,6 +17,6 @@ class Game {
     }
 
     func play() {
-        self.score += 1
+        score += 1
     }
 }
