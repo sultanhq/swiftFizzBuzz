@@ -32,4 +32,5 @@ class BrainTests: XCTestCase {
         let result = brain.isDivisibleByThree(number: 4)
         XCTAssertEqual(result, false)
     }
+    
 }
