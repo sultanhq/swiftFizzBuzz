@@ -26,4 +26,8 @@ class GameTests: XCTestCase {
         
     }
     
+    func testsScoreIncreasesOnPlay() {
+        game.play()
+        XCTAssertTrue(game.score == 1)
+    }
 }
