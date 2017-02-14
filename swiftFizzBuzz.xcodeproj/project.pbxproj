@@ -12,8 +12,8 @@
 		D42AE1971E534515001EC984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42AE1951E534515001EC984 /* Main.storyboard */; };
 		D42AE1991E534515001EC984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42AE1981E534515001EC984 /* Assets.xcassets */; };
 		D42AE19C1E534515001EC984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42AE19A1E534515001EC984 /* LaunchScreen.storyboard */; };
-		D42AE1A71E534515001EC984 /* swiftFizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42AE1A61E534515001EC984 /* swiftFizzBuzzTests.swift */; };
 		D42AE1B21E534515001EC984 /* swiftFizzBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42AE1B11E534515001EC984 /* swiftFizzBuzzUITests.swift */; };
+		D42AE1C01E534568001EC984 /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42AE1BF1E534568001EC984 /* BrainTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +42,11 @@
 		D42AE19B1E534515001EC984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D42AE19D1E534515001EC984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D42AE1A21E534515001EC984 /* swiftFizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftFizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D42AE1A61E534515001EC984 /* swiftFizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftFizzBuzzTests.swift; sourceTree = "<group>"; };
 		D42AE1A81E534515001EC984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D42AE1AD1E534515001EC984 /* swiftFizzBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftFizzBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42AE1B11E534515001EC984 /* swiftFizzBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftFizzBuzzUITests.swift; sourceTree = "<group>"; };
 		D42AE1B31E534515001EC984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D42AE1BF1E534568001EC984 /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +110,8 @@
 		D42AE1A51E534515001EC984 /* swiftFizzBuzzTests */ = {
 			isa = PBXGroup;
 			children = (
-				D42AE1A61E534515001EC984 /* swiftFizzBuzzTests.swift */,
 				D42AE1A81E534515001EC984 /* Info.plist */,
+				D42AE1BF1E534568001EC984 /* BrainTests.swift */,
 			);
 			path = swiftFizzBuzzTests;
 			sourceTree = "<group>";
@@ -197,6 +197,7 @@
 					};
 					D42AE1A11E534515001EC984 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D42AE18D1E534511001EC984;
 					};
@@ -268,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D42AE1A71E534515001EC984 /* swiftFizzBuzzTests.swift in Sources */,
+				D42AE1C01E534568001EC984 /* BrainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,10 +438,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = swiftFizzBuzzTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sultanhq.swiftFizzBuzzTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftFizzBuzz.app/swiftFizzBuzz";
 			};
@@ -451,6 +454,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = swiftFizzBuzzTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sultanhq.swiftFizzBuzzTests;
