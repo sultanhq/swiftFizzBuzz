@@ -30,4 +30,14 @@ class Brain {
         
     }
     
+    func isDivisibleByFiveAndThree(number: Int) -> Bool {
+        if (isDivisibleByThree(number: number) && isDivisibleByFive(number: number)) {
+            return true
+        }
+        else {
+            return false
+        }
+        
+    }
+    
 }
