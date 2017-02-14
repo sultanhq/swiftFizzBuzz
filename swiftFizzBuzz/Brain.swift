@@ -10,34 +10,13 @@ import Foundation
 
 class Brain {
     
-    func isDivisibleByThree(number: Int) -> Bool {
-        if number % 3 == 0 {
+    func isDivisibleBy(divisor: Int, number: Int) -> Bool {
+        if (number % divisor) == 0 {
             return true
         }
         else {
             return false
         }
-        
-    }
-    
-    func isDivisibleByFive(number: Int) -> Bool {
-        if number % 5 == 0 {
-            return true
-        }
-        else {
-            return false
-        }
-        
-    }
-    
-    func isDivisibleByFiveAndThree(number: Int) -> Bool {
-        if (isDivisibleByThree(number: number) && isDivisibleByFive(number: number)) {
-            return true
-        }
-        else {
-            return false
-        }
-        
     }
     
 }
