@@ -14,6 +14,7 @@
 		D42AE19C1E534515001EC984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42AE19A1E534515001EC984 /* LaunchScreen.storyboard */; };
 		D42AE1B21E534515001EC984 /* swiftFizzBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42AE1B11E534515001EC984 /* swiftFizzBuzzUITests.swift */; };
 		D42AE1C01E534568001EC984 /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42AE1BF1E534568001EC984 /* BrainTests.swift */; };
+		D42AE1C21E5347F5001EC984 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42AE1C11E5347F5001EC984 /* Brain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D42AE1B11E534515001EC984 /* swiftFizzBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftFizzBuzzUITests.swift; sourceTree = "<group>"; };
 		D42AE1B31E534515001EC984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D42AE1BF1E534568001EC984 /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
+		D42AE1C11E5347F5001EC984 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				D42AE1911E534515001EC984 /* AppDelegate.swift */,
+				D42AE1C11E5347F5001EC984 /* Brain.swift */,
 				D42AE1931E534515001EC984 /* ViewController.swift */,
 				D42AE1951E534515001EC984 /* Main.storyboard */,
 				D42AE1981E534515001EC984 /* Assets.xcassets */,
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D42AE1941E534515001EC984 /* ViewController.swift in Sources */,
+				D42AE1C21E5347F5001EC984 /* Brain.swift in Sources */,
 				D42AE1921E534515001EC984 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +513,7 @@
 				D42AE1B81E534515001EC984 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D42AE1B91E534515001EC984 /* Build configuration list for PBXNativeTarget "swiftFizzBuzzTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +522,7 @@
 				D42AE1BB1E534515001EC984 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D42AE1BC1E534515001EC984 /* Build configuration list for PBXNativeTarget "swiftFizzBuzzUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +531,7 @@
 				D42AE1BE1E534515001EC984 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

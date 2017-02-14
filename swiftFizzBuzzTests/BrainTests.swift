@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import swiftFizzBuzz
 
 class BrainTests: XCTestCase {
     
@@ -20,5 +21,10 @@ class BrainTests: XCTestCase {
         super.tearDown()
     }
     
-        
+    func testIsDivisibleByThree() {
+        let brain = Brain()
+        let result = brain.isDivisibleByThree(number: 3)
+        XCTAssertEqual(result, true)
+    }
+    
 }
