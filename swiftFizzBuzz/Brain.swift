@@ -11,7 +11,12 @@ import Foundation
 class Brain {
     
     func isDivisibleByThree(number: Int) -> Bool {
-        return true
+        if number == 3 {
+            return true
+        }
+        else {
+            return false
+        }
         
     }
     
