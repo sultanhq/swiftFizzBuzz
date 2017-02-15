@@ -58,18 +58,28 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWC-gU-D5r" userLabel="Space">
+                                        <rect key="frame" x="108" y="233" width="100" height="215"/>
+                                        <state key="normal" image="space" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="1co-mi-Yya" firstAttribute="width" secondItem="a3O-5C-ga5" secondAttribute="width" multiplier="0.48" id="2Cm-MK-Ibq"/>
                                     <constraint firstItem="1co-mi-Yya" firstAttribute="height" secondItem="a3O-5C-ga5" secondAttribute="height" multiplier="0.48" id="2l4-tD-SKU"/>
                                     <constraint firstItem="1co-mi-Yya" firstAttribute="top" secondItem="a3O-5C-ga5" secondAttribute="top" id="3uL-NQ-t9q"/>
+                                    <constraint firstItem="QWC-gU-D5r" firstAttribute="height" secondItem="a3O-5C-ga5" secondAttribute="height" multiplier="0.48" id="DED-zS-3LG"/>
                                     <constraint firstItem="cpd-Jl-oga" firstAttribute="leading" secondItem="a3O-5C-ga5" secondAttribute="leading" id="HT1-e3-Sv2"/>
                                     <constraint firstAttribute="bottom" secondItem="cpd-Jl-oga" secondAttribute="bottom" id="Jze-sO-zU5"/>
                                     <constraint firstItem="cpd-Jl-oga" firstAttribute="width" secondItem="a3O-5C-ga5" secondAttribute="width" multiplier="0.48" id="Ppp-EK-5ME"/>
                                     <constraint firstItem="xW8-Jf-HJu" firstAttribute="height" secondItem="a3O-5C-ga5" secondAttribute="height" multiplier="0.48" id="QdK-fA-pk7"/>
                                     <constraint firstItem="xW8-Jf-HJu" firstAttribute="width" secondItem="a3O-5C-ga5" secondAttribute="width" multiplier="0.48" id="Qff-0g-aOV"/>
+                                    <constraint firstItem="QWC-gU-D5r" firstAttribute="width" secondItem="a3O-5C-ga5" secondAttribute="width" multiplier="0.48" id="TmK-6r-9aa"/>
                                     <constraint firstItem="cpd-Jl-oga" firstAttribute="height" secondItem="a3O-5C-ga5" secondAttribute="height" multiplier="0.48" id="UaX-dH-DLE"/>
+                                    <constraint firstAttribute="bottom" secondItem="QWC-gU-D5r" secondAttribute="bottom" id="Yh8-Gq-5YO"/>
+                                    <constraint firstAttribute="trailing" secondItem="QWC-gU-D5r" secondAttribute="trailing" id="dUv-Id-YAn"/>
                                     <constraint firstAttribute="trailing" secondItem="1co-mi-Yya" secondAttribute="trailing" id="lw8-IU-4Xa"/>
                                     <constraint firstItem="xW8-Jf-HJu" firstAttribute="top" secondItem="a3O-5C-ga5" secondAttribute="top" id="pxs-2L-vge"/>
                                     <constraint firstItem="xW8-Jf-HJu" firstAttribute="leading" secondItem="a3O-5C-ga5" secondAttribute="leading" id="yY5-si-9QE"/>
@@ -98,5 +108,6 @@
         <image name="button_border" width="400" height="400"/>
         <image name="champagne" width="49" height="50"/>
         <image name="lightning" width="29" height="50"/>
+        <image name="space" width="47" height="50"/>
     </resources>
 </document>
