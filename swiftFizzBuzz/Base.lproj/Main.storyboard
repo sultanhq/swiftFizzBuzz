@@ -31,7 +31,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 / 5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cY-p6-p48">
-                                <rect key="frame" x="260.5" y="20" width="43.5" height="27.5"/>
+                                <rect key="frame" x="260" y="20" width="44" height="28"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.95294117647058818" green="0.35686274509803922" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -39,20 +39,30 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3O-5C-ga5" userLabel="GameView">
                                 <rect key="frame" x="56" y="60" width="208" height="448"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWj-cu-9GU">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="215"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xW8-Jf-HJu">
+                                        <rect key="frame" x="0.0" y="0.0" width="100.5" height="215.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="70"/>
                                         <state key="normal" title="0" backgroundImage="button_border">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1co-mi-Yya" userLabel="Champagne">
+                                        <rect key="frame" x="108" y="0.0" width="100" height="215"/>
+                                        <state key="normal" image="champagne" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="qWj-cu-9GU" firstAttribute="height" secondItem="a3O-5C-ga5" secondAttribute="height" multiplier="0.48" id="GRn-dU-BOM"/>
-                                    <constraint firstAttribute="leading" secondItem="qWj-cu-9GU" secondAttribute="leading" id="RnH-ZE-7qF"/>
-                                    <constraint firstItem="qWj-cu-9GU" firstAttribute="width" secondItem="a3O-5C-ga5" secondAttribute="width" multiplier="0.48" id="jNP-vP-xKv"/>
-                                    <constraint firstItem="qWj-cu-9GU" firstAttribute="top" secondItem="a3O-5C-ga5" secondAttribute="top" id="sVE-VN-dpu"/>
+                                    <constraint firstItem="1co-mi-Yya" firstAttribute="width" secondItem="a3O-5C-ga5" secondAttribute="width" multiplier="0.48" id="2Cm-MK-Ibq"/>
+                                    <constraint firstItem="1co-mi-Yya" firstAttribute="height" secondItem="a3O-5C-ga5" secondAttribute="height" multiplier="0.48" id="2l4-tD-SKU"/>
+                                    <constraint firstItem="1co-mi-Yya" firstAttribute="top" secondItem="a3O-5C-ga5" secondAttribute="top" id="3uL-NQ-t9q"/>
+                                    <constraint firstItem="xW8-Jf-HJu" firstAttribute="height" secondItem="a3O-5C-ga5" secondAttribute="height" multiplier="0.48" id="QdK-fA-pk7"/>
+                                    <constraint firstItem="xW8-Jf-HJu" firstAttribute="width" secondItem="a3O-5C-ga5" secondAttribute="width" multiplier="0.48" id="Qff-0g-aOV"/>
+                                    <constraint firstAttribute="trailing" secondItem="1co-mi-Yya" secondAttribute="trailing" id="lw8-IU-4Xa"/>
+                                    <constraint firstItem="xW8-Jf-HJu" firstAttribute="top" secondItem="a3O-5C-ga5" secondAttribute="top" id="pxs-2L-vge"/>
+                                    <constraint firstItem="xW8-Jf-HJu" firstAttribute="leading" secondItem="a3O-5C-ga5" secondAttribute="leading" id="yY5-si-9QE"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -76,5 +86,6 @@
     </scenes>
     <resources>
         <image name="button_border" width="400" height="400"/>
+        <image name="champagne" width="49" height="50"/>
     </resources>
 </document>
