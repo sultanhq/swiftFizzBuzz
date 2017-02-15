@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,12 +36,34 @@
                                 <color key="textColor" red="0.95294117647058818" green="0.35686274509803922" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3O-5C-ga5" userLabel="GameView">
+                                <rect key="frame" x="56" y="60" width="208" height="448"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWj-cu-9GU">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="215"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
+                                        <state key="normal" title="0" backgroundImage="button_border">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="qWj-cu-9GU" firstAttribute="height" secondItem="a3O-5C-ga5" secondAttribute="height" multiplier="0.48" id="GRn-dU-BOM"/>
+                                    <constraint firstAttribute="leading" secondItem="qWj-cu-9GU" secondAttribute="leading" id="RnH-ZE-7qF"/>
+                                    <constraint firstItem="qWj-cu-9GU" firstAttribute="width" secondItem="a3O-5C-ga5" secondAttribute="width" multiplier="0.48" id="jNP-vP-xKv"/>
+                                    <constraint firstItem="qWj-cu-9GU" firstAttribute="top" secondItem="a3O-5C-ga5" secondAttribute="top" id="sVE-VN-dpu"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.16470588235294117" green="0.20000000000000001" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5cY-p6-p48" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0KD-Ym-dHS"/>
+                            <constraint firstItem="a3O-5C-ga5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I9n-eP-YIj"/>
+                            <constraint firstItem="a3O-5C-ga5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="RP3-qz-OOX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Cv2-Ia-lfq" secondAttribute="trailing" id="XiR-fY-igu"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cv2-Ia-lfq" secondAttribute="bottom" constant="20" id="o7X-0M-9F0"/>
+                            <constraint firstItem="a3O-5C-ga5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="fHu-iC-a0v"/>
+                            <constraint firstItem="a3O-5C-ga5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oz1-Ny-qa4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5cY-p6-p48" secondAttribute="trailing" id="xhC-oV-VyV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cv2-Ia-lfq" secondAttribute="bottom" constant="8" id="z43-41-hMs"/>
                         </constraints>
@@ -51,4 +74,7 @@
             <point key="canvasLocation" x="-78.75" y="136.26760563380282"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_border" width="400" height="400"/>
+    </resources>
 </document>

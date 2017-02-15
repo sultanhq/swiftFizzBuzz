@@ -202,6 +202,7 @@
 				TargetAttributes = {
 					D42AE18D1E534511001EC984 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2MW9M5T7PM;
 						ProvisioningStyle = Automatic;
 					};
 					D42AE1A11E534515001EC984 = {
@@ -427,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2MW9M5T7PM;
 				INFOPLIST_FILE = swiftFizzBuzz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sultanhq.swiftFizzBuzz;
@@ -439,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2MW9M5T7PM;
 				INFOPLIST_FILE = swiftFizzBuzz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sultanhq.swiftFizzBuzz;
