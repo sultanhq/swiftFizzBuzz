@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     }
 
     @IBOutlet weak var numberButton: UIButton!
+    @IBOutlet weak var fizzButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,14 +48,16 @@ class ViewController: UIViewController {
         let response = unwrappedGame.play(move: move)
         gameScore = response.score
     }
-    @IBAction func buttonTapped(_ sender: Any) {
-        guard let unwrappedScore = gameScore else {
-            print("gameScore is nil!")
-            return
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        if sender == numberButton {
+            play(move: Moves.Number)
         }
-        
-        let nextScore = unwrappedScore + 1
-        play(move: Moves.Number)
+        else if sender == fizzButton {
+            play(move: Moves.Fizz)
+        }
+        else {
+            play(move: Moves.Buzz)
+        }
     }
 }
 

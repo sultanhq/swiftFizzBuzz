@@ -40,7 +40,7 @@
                                 <rect key="frame" x="56" y="60" width="208" height="448"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xW8-Jf-HJu" userLabel="0">
-                                        <rect key="frame" x="0.0" y="0.0" width="101" height="216"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="216"/>
                                         <accessibility key="accessibilityConfiguration" identifier="numberButton"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="70"/>
                                         <state key="normal" title="0" backgroundImage="button_border">
@@ -52,15 +52,23 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1co-mi-Yya" userLabel="Champagne">
                                         <rect key="frame" x="108" y="0.0" width="100" height="215"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzButton"/>
                                         <state key="normal" image="champagne" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddS-YM-Cwf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpd-Jl-oga" userLabel="Lightning">
                                         <rect key="frame" x="0.0" y="233" width="100" height="215"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="buzzButton"/>
                                         <state key="normal" image="lightning" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zlS-Z3-NYn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWC-gU-D5r" userLabel="Space">
                                         <rect key="frame" x="108" y="233" width="100" height="215"/>
@@ -103,6 +111,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="fizzButton" destination="1co-mi-Yya" id="c3h-k5-DUg"/>
                         <outlet property="numberButton" destination="xW8-Jf-HJu" id="Vs0-b7-xZ6"/>
                     </connections>
                 </viewController>
