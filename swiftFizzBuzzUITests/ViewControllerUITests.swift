@@ -28,6 +28,28 @@ class ViewControllerUITests: XCTestCase {
         super.tearDown()
     }
     
+    func playTo14() {
+        let app = XCUIApplication()
+        let numberButton = app.buttons["numberButton"]
+        let fizzButton = app.buttons["fizzButton"]
+        let buzzButton = app.buttons["buzzButton"]
+        
+        numberButton.tap()
+        numberButton.tap()
+        fizzButton.tap()
+        numberButton.tap()
+        buzzButton.tap()
+        fizzButton.tap()
+        numberButton.tap()
+        numberButton.tap()
+        fizzButton.tap()
+        buzzButton.tap()
+        numberButton.tap()
+        fizzButton.tap()
+        numberButton.tap()
+        numberButton.tap()
+    }
+    
     func testTapNumberButtonIncreamentScore() {
         XCUIDevice.shared().orientation = .portrait
         
@@ -88,4 +110,19 @@ class ViewControllerUITests: XCTestCase {
         XCTAssertEqual(newScore, "5")
     }
     
+    func testTapFizzBuzzButtonIncreamentScore() {
+        
+        XCUIDevice.shared().orientation = .portrait
+        
+        let app = XCUIApplication()
+        let fizzBuzzButton = app.buttons["fizzBuzzButton"]
+        let numberButton = app.buttons["numberButton"]
+
+        playTo14()
+        
+        fizzBuzzButton.tap()
+        let newScore = numberButton.label
+        XCTAssertEqual(newScore, "15")
+    }
+
 }
