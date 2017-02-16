@@ -115,6 +115,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buzzButton" destination="cpd-Jl-oga" id="tjQ-ZL-bfh"/>
                         <outlet property="fizzButton" destination="1co-mi-Yya" id="c3h-k5-DUg"/>
                         <outlet property="fizzBuzzButton" destination="QWC-gU-D5r" id="Rjg-Vp-vcL"/>
                         <outlet property="numberButton" destination="xW8-Jf-HJu" id="Vs0-b7-xZ6"/>
