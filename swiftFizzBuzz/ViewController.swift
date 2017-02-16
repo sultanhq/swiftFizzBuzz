@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func play(move: String) {
+    func play(move: Moves) {
         guard let unwrappedGame = game else {
             print("Game is nil!")
             return
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         }
         
         let nextScore = unwrappedScore + 1
-        play(move: "\(nextScore)")
+        play(move: Moves.Number)
     }
 }
 
