@@ -40,7 +40,8 @@
                                 <rect key="frame" x="56" y="60" width="208" height="448"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xW8-Jf-HJu" userLabel="0">
-                                        <rect key="frame" x="0.0" y="0.0" width="100.5" height="215.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="216"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="numberButton"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="70"/>
                                         <state key="normal" title="0" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

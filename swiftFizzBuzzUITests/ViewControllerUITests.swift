@@ -31,10 +31,26 @@ class ViewControllerUITests: XCTestCase {
     func testTapNumberButtonIncreamentScore() {
         XCUIDevice.shared().orientation = .portrait
         
-        XCUIApplication().buttons["0"].tap()
+        let app = XCUIApplication()
+        let numberButton = app.buttons["numberButton"]
         
-        let newScore = XCUIApplication().buttons["1"].label
+        numberButton.tap()
+        
+        let newScore = numberButton.label
         XCTAssertEqual(newScore, "1")
+    }
+    
+    func testTapNumberButtonTwiceIncreamentScoreTo2() {
+        XCUIDevice.shared().orientation = .portrait
+        
+        let app = XCUIApplication()
+        let numberButton = app.buttons["numberButton"]
+        
+        numberButton.tap()
+        numberButton.tap()
+        
+        let newScore = numberButton.label
+        XCTAssertEqual(newScore, "2")
     }
     
 }
